@@ -33,12 +33,26 @@ const VideoDetail = () => {
     <Box minHeight="95vh">
       <Stack direction={{ xs: "column", md: "row" }}>
         <Box flex={1}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
-            <ReactPlayer
-              url={`https://www.youtube.com/watch?v=${id}`}
-              className="react-player"
-              controls
-            />
+          <Box
+            className="react1"
+            sx={{
+              width: "100%",
+              position: "sticky",
+              top: "1px",
+              // border: "1px solid red",
+            }}
+          >
+            <div className="video-wrapper">
+              <ReactPlayer
+                url={`https://www.youtube.com/watch?v=${id}`}
+                height="320px"
+                // sx={{ width: { sm: "240px", lg: "240px" } }}
+                width="360px"
+                sx={{ pl: "1rem", border: "1px solid red" }}
+                className="react-player"
+                controls
+              />
+            </div>
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
               {title}
             </Typography>

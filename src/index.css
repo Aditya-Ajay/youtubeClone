@@ -11,7 +11,7 @@ body {
 .search-bar {
   border: none;
   outline: none;
-  width: 250px;
+  width: 240px;
 }
 .styling {
   margin-right: 15rem;
@@ -38,14 +38,19 @@ body {
 }
 @media screen and (max-width: 600px) {
   .search-bar {
-    width: 100px;
+    width: 80px;
   }
   .react-player {
     height: 45vh !important;
+
+    margin-top: 5px;
+    margin-right: 10px;
+    /* padding-right: 1000px; */
+    /* border: 5px solid red; */
   }
-  .width {
+  /* .width {
     width: "280px";
-  }
+  } */
 
   .styling {
     margin-right: 0;
@@ -111,3 +116,21 @@ body {
     width: "240px";
   }
 }
+/* @media (min-width: 290px) and (max-width: 710px) {
+  .react1 {
+    width: "70%";
+  }
+} */
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+}
+
+/* .react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+/* .react-player { */
+/* width: 640px;
+} */
